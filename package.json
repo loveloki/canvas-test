@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "web": "parcel src/web/index.html"
   },
   "author": "",
   "license": "MIT",
@@ -12,5 +13,8 @@
   "dependencies": {
     "canvas": "^2.11.2",
     "skia-canvas": "^2.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
   }
 }
