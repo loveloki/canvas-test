@@ -2,3 +2,8 @@ canvas {
   margin: 16px;
   outline: 1px solid black;
 }
+
+@font-face {
+  font-family: 'zcool-gdh';
+  src: url('/assets/zcool-gdh.ttf');
+}
