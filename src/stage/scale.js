@@ -20,6 +20,11 @@ export function drawTextWithScale(canvas, tip) {
       letterSpacing: 0,
     },
     {
+      scaleX: 1,
+      scaleY: 1,
+      letterSpacing: '-1px',
+    },
+    {
       scaleX: 0.5,
       scaleY: 1,
       letterSpacing: "1px",
@@ -55,7 +60,7 @@ export function drawTextWithScale(canvas, tip) {
 
   // draw text with crossLine
   baselines.forEach(({ scaleX, scaleY, letterSpacing }, index) =>
-    drawTextWithScale(text, x, y + step * (index + 1), scaleX, scaleY)
+    drawTextWithScale(text, x, y + step * (index + 1), scaleX, scaleY, letterSpacing)
   );
 
   y = 600;
