@@ -16,9 +16,9 @@ export function drawTextWithScale(canvas, canvasType) {
 
   const baselines = [
     {
-      scaleX: 1,
-      scaleY: 1,
-      letterSpacing: 0,
+      scaleX: 0.8,
+      scaleY: 0.8,
+      letterSpacing: '0px',
     },
     {
       scaleX: 1,
@@ -85,6 +85,7 @@ export function drawTextWithScale(canvas, canvasType) {
   // with letterSpacing
   baselines.forEach(({ scaleX, scaleY, letterSpacing }, index) => {
     const newY = y + step * (index + 1);
+
     drawCrossLine(ctx, x, newY);
     drawTextWithTip2(ctx, `${scaleX}, ${scaleY}, ${letterSpacing}`, x - 10, newY);
 
