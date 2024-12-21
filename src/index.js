@@ -1,8 +1,6 @@
-import canvasList from "./canvas/index.js";
 import path from "node:path";
-console.log("canvasList", canvasList);
 import { mkdirSync, existsSync } from "node:fs";
-
+import canvasList from "./canvas/index.js";
 import stages from "./stage/index.js";
 
 const outputDir = path.join(process.cwd(), "output");

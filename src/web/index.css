@@ -4,6 +4,6 @@ canvas {
 }
 
 @font-face {
-  font-family: 'zcool-gdh';
-  src: url('/assets/zcool-gdh.ttf');
+  font-family: "zcool-gdh";
+  src: url("/assets/zcool-gdh.ttf");
 }
