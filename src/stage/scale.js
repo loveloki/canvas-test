@@ -1,7 +1,7 @@
 export function drawTextWithScale(canvas, tip) {
   const crossLineHalfWidth = 25;
   const step = 60;
-  const x = 50;
+  const x = 90;
   let y = 60;
   let fontFamily = "zcool-gdh";
   let text = "The quick brown fox jumps over the lazy dog";
@@ -22,7 +22,7 @@ export function drawTextWithScale(canvas, tip) {
     {
       scaleX: 1,
       scaleY: 1,
-      letterSpacing: '-1px',
+      letterSpacing: "-1px",
     },
     {
       scaleX: 0.5,
@@ -37,10 +37,10 @@ export function drawTextWithScale(canvas, tip) {
     {
       scaleX: 0.8,
       scaleY: 1,
-      letterSpacing: "-1px",
+      letterSpacing: "12.5px",
     },
     {
-      scaleX: 0.8,
+      scaleX: 1,
       scaleY: 1,
       letterSpacing: "-10px",
     },
@@ -49,24 +49,12 @@ export function drawTextWithScale(canvas, tip) {
   // draw tip
   drawTextWithTip(tip);
 
-  // log metrics
-  const metrics = ctx.measureText("我");
-  console.log(`${tip} metrics is: `, metrics);
-
-  // draw text with crossLine
-  baselines.forEach(({ scaleX, scaleY }, index) => drawTextWithScale(text, x, y + step * (index + 1), scaleX, scaleY));
-
   // with letterSpacing
-
-  // draw text with crossLine
-  baselines.forEach(({ scaleX, scaleY, letterSpacing }, index) =>
-    drawTextWithScale(text, x, y + step * (index + 1), scaleX, scaleY, letterSpacing)
-  );
-
-  y = 600;
-  fontFamily = "Times new Roman";
-  ctx.font = `normal 12pt '${fontFamily}'`;
-  text = "Abcdefg";
+  baselines.forEach(({ scaleX, scaleY, letterSpacing }, index) => {
+    const newY = y + step * (index + 1);
+    drawCrossLine(x, newY);
+    drawTextWithScale(text, x, newY, scaleX, scaleY, letterSpacing);
+  });
 
   function drawTextWithScale(text, x, y, scaleX, scaleY, letterSpacing) {
     ctx.setTransform(scaleX, 0, 0, scaleY, 0, 0);
@@ -80,7 +68,9 @@ export function drawTextWithScale(canvas, tip) {
     ctx.fillText(text, newX, newY);
 
     ctx.resetTransform();
+  }
 
+  function drawCrossLine(x, y) {
     ctx.moveTo(x - crossLineHalfWidth, y);
     ctx.lineTo(x + crossLineHalfWidth, y);
     ctx.stroke();
