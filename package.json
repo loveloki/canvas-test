@@ -1,0 +1,16 @@
+{
+  "name": "canvas-test",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "skia-canvas": "^2.0.1"
+  }
+}
