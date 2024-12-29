@@ -3,9 +3,12 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "start": "node src/index.js",
+    "postinstall": "npm run install-fonts",
+    "pdf": "FILETYPE=pdf node src/index.js",
+    "png": "FILETYPE=png node src/index.js",
     "web": "parcel src/web/index.html",
-    "build": "parcel build src/web/index.html"
+    "install-fonts": "if [ ! -d ~/.fonts ]; then mkdir ~/.fonts; fi && cp assets/zcool-gdh.ttf ~/.fonts",
+    "build": "parcel build src/web/index.html && npm run png"
   },
   "author": "",
   "license": "MIT",

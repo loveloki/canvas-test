@@ -3,7 +3,7 @@ import { mkdirSync, existsSync } from "node:fs";
 import canvasList from "./canvas/index.js";
 import stages from "./stage/index.js";
 
-const fileType = "png";
+const fileType = process.env.FILETYPE || "pdf";
 const outputDir = path.join(process.cwd(), "output");
 
 if (!existsSync(outputDir)) {
