@@ -2,10 +2,10 @@
   "name": "canvas-test",
   "type": "module",
   "version": "1.0.0",
-  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "web": "parcel src/web/index.html"
+    "web": "parcel src/web/index.html",
+    "build": "parcel build src/web/index.html"
   },
   "author": "",
   "license": "MIT",
