@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <header>
+      <h1 id="tip"></h1>
+      <div id="btn-group"></div>
+    </header>
     <main>
-      <header>
-        <h1 id="tip"></h1>
-        <div id="btn-group"></div>
-      </header>
       <canvas id="canvas" width="1000" height="1000"></canvas>
+      <aside>
+        <div>
+          <button id="skia">skia</button>
+          <button id="node">node</button>
+        </div>
+      </aside>
     </main>
     <script type="module" src="./web.js"></script>
   </body>

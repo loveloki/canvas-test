@@ -3,6 +3,10 @@ canvas {
   outline: 1px solid black;
 }
 
+main {
+  display: flex;
+}
+
 @font-face {
   font-family: "zcool-gdh";
   src: url("/assets/zcool-gdh.ttf");
