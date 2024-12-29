@@ -1,0 +1,60 @@
+diff --git a/node_modules/skia-canvas/CHANGELOG.md b/node_modules/skia-canvas/CHANGELOG.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/LICENSE b/node_modules/skia-canvas/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/README.md b/node_modules/skia-canvas/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/browser.js b/node_modules/skia-canvas/lib/browser.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/canvas.js b/node_modules/skia-canvas/lib/classes/canvas.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/context.js b/node_modules/skia-canvas/lib/classes/context.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/css.js b/node_modules/skia-canvas/lib/classes/css.js
+old mode 100644
+new mode 100755
+index b31793f..1c6481c
+--- a/node_modules/skia-canvas/lib/classes/css.js
++++ b/node_modules/skia-canvas/lib/classes/css.js
+@@ -16,7 +16,7 @@ const styleRE = /^(normal|italic|oblique)$/,
+       smallcapsRE = /^(normal|small-caps)$/,
+       stretchRE = /^(normal|(semi-|extra-|ultra-)?(condensed|expanded))$/,
+       namedSizeRE = /(?:xx?-)?small|smaller|medium|larger|(?:xx?-)?large|normal/,
+-      numSizeRE = /^([\d\.]+)(px|pt|pc|in|cm|mm|%|em|ex|ch|rem|q)/,
++      numSizeRE = /^(\-?[\d\.]+)(px|pt|pc|in|cm|mm|%|em|ex|ch|rem|q)/,
+       namedWeightRE = /^(normal|bold(er)?|lighter)$/,
+       numWeightRE = /^(1000|\d{1,3})$/,
+       parameterizedRE = /([\w\-]+)\((.*?)\)/,
+diff --git a/node_modules/skia-canvas/lib/classes/geometry.js b/node_modules/skia-canvas/lib/classes/geometry.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/gui.js b/node_modules/skia-canvas/lib/classes/gui.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/imagery.js b/node_modules/skia-canvas/lib/classes/imagery.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/neon.js b/node_modules/skia-canvas/lib/classes/neon.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/path.js b/node_modules/skia-canvas/lib/classes/path.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/classes/typography.js b/node_modules/skia-canvas/lib/classes/typography.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/index.d.ts b/node_modules/skia-canvas/lib/index.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/index.js b/node_modules/skia-canvas/lib/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/skia-canvas/lib/index.mjs b/node_modules/skia-canvas/lib/index.mjs
+old mode 100644
+new mode 100755
